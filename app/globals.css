@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
