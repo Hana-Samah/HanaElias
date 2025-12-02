@@ -1,9 +1,8 @@
 @import "tailwindcss";
 @tailwind utilities;
 
-
 * {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
@@ -13,9 +12,29 @@ body {
   background: #fff;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+}
+/* مثال لتنسيق الصور في ملف CSS */
+
+.project-image-display {
+  width: 100%; /* اجعلي الصورة تأخذ العرض الكامل للمساحة المتاحة */
+  height: 300px; /* **هنا تحددين الارتفاع الثابت الموحد الذي تريدينه** */
+  /* أو يمكنكِ تحديد عرض ثابت وارتفاع تلقائي: */
+  /* width: 400px; */
+  /* height: auto; */
+
+  object-fit: cover; /* **الأهم لتوحيد الشكل دون تشويه** */
+  /* - `cover`: يملأ العنصر مع الحفاظ على نسبة العرض إلى الارتفاع، ويقص أي أجزاء زائدة. هذا هو الأكثر شيوعًا.
+       - `contain`: يجعل الصورة تتناسب داخل العنصر، مع الحفاظ على نسبة العرض إلى الارتفاع، وقد يترك مساحات فارغة.
+       - `fill`: يملأ العنصر بالكامل، ولكن قد يؤدي إلى تشويه الصورة.
+       - `none`: لا يتم تغيير حجم الصورة.
+       - `scale-down`: يختار بين `none` و `contain` لتكون الصورة بأصغر حجم ممكن.
+  */
+  border-radius: 8px; /* لمسة جمالية */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* لمسة جمالية */
 }

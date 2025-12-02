@@ -34,7 +34,24 @@ import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
+import game_img from "./game_img.png";
+import app_img from "./app_img.png";
+import hotel_img from "./hotel_img.png";
+import ai_img from "./ai_img.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+
+// أولاً، استورد الأيقونات المطلوبة في أعلى الملف
+import { IoLogoJavascript } from "react-icons/io5";
+import { GrMysql } from "react-icons/gr";
+import {
+  FaJava,
+  FaPython,
+  FaReact,
+  FaUnity,
+  FaFigma,
+  FaGitAlt,
+  FaNodeJs,
+} from "react-icons/fa";
 
 export const assets = {
   user_image,
@@ -74,6 +91,10 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  game_img,
+  app_img,
+  hotel_img,
+  ai_img,
 };
 
 export const workData = [
@@ -149,15 +170,48 @@ export const toolsData = [
   assets.figma,
   assets.git,
 ];
+// ثانياً، عدلي المصفوفة لاستخدام مكون الأيقونة بدلاً من مسار الصورة
 export const skillsData = [
-  { name: "Java", icon: assets.java_icon }, // تأكدي من وجود الأيقونات أو استخدمي نصوص
-  { name: "Python", icon: assets.python_icon },
-  { name: "JavaScript", icon: assets.JavaScript_icon },
-  { name: "React Native", icon: assets.react_icon },
-  { name: "MySQL", icon: assets.mysql_icon },
-  { name: "Unity", icon: assets.unity_icon },
-  { name: "Figma", icon: assets.figma_icon },
-  { name: "Git", icon: assets.git_icon },
+  {
+    name: "Java",
+    IconComponent: FaJava, // نمرر اسم المكون نفسه
+    color: "#5382a1", // اللون الرسمي
+  },
+  {
+    name: "Python",
+    IconComponent: FaPython,
+    color: "#3776ab",
+  },
+  {
+    name: "JavaScript",
+    IconComponent: IoLogoJavascript,
+    color: "#f7df1e",
+  },
+  {
+    name: "React Native",
+    IconComponent: FaReact,
+    color: "#61dafb",
+  },
+  {
+    name: "MySQL",
+    IconComponent: GrMysql,
+    color: "#00758f",
+  },
+  {
+    name: "Unity",
+    IconComponent: FaUnity,
+    color: "#000000", // أو الأبيض إذا الخلفية داكنة
+  },
+  {
+    name: "Figma",
+    IconComponent: FaFigma,
+    color: "#F24E1E",
+  },
+  {
+    name: "Git",
+    IconComponent: FaGitAlt,
+    color: "#f1502f",
+  },
 ];
 
 export const projectsData = [
@@ -172,21 +226,21 @@ export const projectsData = [
     title: "Autism Support App",
     description: "Mobile app with communication tools for children.",
     bgImage: assets.app_img,
-    link: "https://github.com/Hana-Samah",
+    link: "https://www.figma.com/design/PXSTA7DzGzeSNDbgQhs1oz/Untitled?node-id=0-1&t=LMhnzXzN3n7829Uw-1",
     tools: ["React Native"],
   },
   {
     title: "Hotel Management System",
     description: "Full booking system for users and admins.",
     bgImage: assets.hotel_img,
-    link: "https://github.com/Hana-Samah",
+    link: "https://github.com/Hana-Samah/ROSE-Hotel.git",
     tools: ["Laravel", "MySQL", "PHP"],
   },
   {
     title: "AI Laptop & Phone Price Prediction",
     description: "ML model to estimate laptop prices for e-commerce.",
     bgImage: assets.ai_img,
-    link: "https://github.com/Hana-Samah",
+    link: "https://github.com/Hana-Samah/ai-ml-with-python-and-knime-2024.git",
     tools: ["Python", "Machine Learning"],
   },
 ];

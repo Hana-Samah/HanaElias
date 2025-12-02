@@ -45,9 +45,11 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-purple-100 to-white opacity-50 z-0"></div>
                 
                 <Image 
-                  src={project.bgImage} 
-                  alt={project.title} 
-                  className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 z-10 relative" 
+                  src={project.bgImage}
+                  alt={project.title}
+                  width={1920} // قيمة عرض صورتك الفعلية (هذه لا تغير حجم العرض، بل تخبر next/image بالأبعاد الأصلية)
+                  height={1080} // قيمة ارتفاع صورتك الفعلية
+                  className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 z-10 relative project-thumbnail" // أضفت كلاس جديد
                 />
                 
                 {/* طبقة تظهر عند الهوفر */}
@@ -78,10 +80,7 @@ const Projects = () => {
 
               <div className="flex items-center gap-4 mt-2">
                  <a href={project.link} target="_blank" className="text-black font-semibold border-b-2 border-purple-600 pb-1 hover:text-purple-600 transition-colors">
-                    Visit Site
-                 </a>
-                 <a href="https://github.com/Hana-Samah" target="_blank" className="text-gray-500 hover:text-black transition-colors flex items-center gap-1">
-                    <Image src={assets.github} alt="" className="w-5 opacity-60"/> Source Code
+                   Source Code
                  </a>
               </div>
             </div>
