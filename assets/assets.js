@@ -214,17 +214,25 @@ export const skillsData = [
   },
 ];
 
+// في آخر ملف assets.js
+
 export const projectsData = [
   {
     title: "Animals Memory Match",
     description: "Educational matching game with progressive difficulty.",
-    bgImage: assets.game_img, // ضعي صورة للمشروع
-    link: "https://github.com/Hana-Samah", // رابط المشروع
+    // أضيفي هذا الحقل الجديد "details"
+    details:
+      "This game, built specifically to sharpen children's cognitive abilities, provides an entertaining and highly effective platform for memory skill development. Developed using the robust Unity engine and C#, it features a dynamic difficulty system with multiple tiers (Easy, Medium, Hard) that intelligently adapt to the player. To ensure maximum replayability and engagement, the cards are algorithmically randomized with every session. I personally drove the end-to-end development process, overseeing all core game logic, intuitive UI/UX design, and seamless integration of sound effects and animations to deliver a polished and superior user experience.",
+    bgImage: assets.game_img,
+    link: "https://github.com/Hana-Samah",
     tools: ["Unity", "C#"],
   },
   {
     title: "Autism Support App",
     description: "Mobile app with communication tools for children.",
+    // أضيفي هذا الحقل الجديد "details"
+    details:
+      "A high-impact, cross-platform mobile application developed using React Native, meticulously designed to support Arabic-speaking children with autism spectrum disorder (ASD) and their caregivers. This specialized tool addresses key communication barriers by integrating essential features: Picture Exchange Communication System (PECS) boards, interactive Social Stories for daily task sequencing, and a comprehensive resource hub tailored for parental guidance. The project has successfully completed its detailed design phase in Figma and is currently advancing through active development and implementation, targeting immediate delivery to the user community.",
     bgImage: assets.app_img,
     link: "https://www.figma.com/design/PXSTA7DzGzeSNDbgQhs1oz/Untitled?node-id=0-1&t=LMhnzXzN3n7829Uw-1",
     tools: ["React Native"],
@@ -232,6 +240,9 @@ export const projectsData = [
   {
     title: "Hotel Management System",
     description: "Full booking system for users and admins.",
+    // أضيفي هذا الحقل الجديد "details"
+    details:
+      "A robust and comprehensive web-based management system engineered to streamline operations for small to medium-sized hotels. The platform provides distinct, secure dashboards: a user-facing portal for seamless room booking, and a dedicated administrator dashboard for efficient management of reservations, inventory (rooms), and staff oversight. Architected using the highly scalable Laravel PHP framework and optimized with MySQL, this project powerfully demonstrates advanced competence in secure backend architecture design, relational database modeling, and implementing robust authentication protocols.",
     bgImage: assets.hotel_img,
     link: "https://github.com/Hana-Samah/ROSE-Hotel.git",
     tools: ["Laravel", "MySQL", "PHP"],
@@ -239,6 +250,9 @@ export const projectsData = [
   {
     title: "AI Laptop & Phone Price Prediction",
     description: "ML model to estimate laptop prices for e-commerce.",
+    // أضيفي هذا الحقل الجديد "details"
+    details:
+      "A sophisticated Machine Learning project focused on predictive pricing analytics for high-demand electronic devices, specifically mobile phones and laptops. Utilizing Python, along with industry-standard libraries like Scikit-learn and Pandas, I executed a rigorous process encompassing extensive data cleaning and preprocessing, advanced feature engineering, and the training of multiple regression models. The culmination was a highly accurate final model that provides reliable price predictions based on detailed device specifications, significantly exceeding baseline performance benchmarks.",
     bgImage: assets.ai_img,
     link: "https://github.com/Hana-Samah/ai-ml-with-python-and-knime-2024.git",
     tools: ["Python", "Machine Learning"],
