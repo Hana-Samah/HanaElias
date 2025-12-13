@@ -224,7 +224,7 @@ export const projectsData = [
     details:
       "This game, built specifically to sharpen children's cognitive abilities, provides an entertaining and highly effective platform for memory skill development. Developed using the robust Unity engine and C#, it features a dynamic difficulty system with multiple tiers (Easy, Medium, Hard) that intelligently adapt to the player. To ensure maximum replayability and engagement, the cards are algorithmically randomized with every session. I personally drove the end-to-end development process, overseeing all core game logic, intuitive UI/UX design, and seamless integration of sound effects and animations to deliver a polished and superior user experience.",
     bgImage: assets.game_img,
-    link: "https://github.com/Hana-Samah",
+    link: "https://hanaelias.itch.io/animals-memory-match",
     tools: ["Unity", "C#"],
   },
   {
